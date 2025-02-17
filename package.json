@@ -1,0 +1,19 @@
+{
+  "name": "base-test",
+  "version": "1.0.0",
+  "description": "Base test project with frontend and smart contracts",
+  "scripts": {
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:install": "cd frontend && npm install",
+    "contract:compile": "npx hardhat compile",
+    "contract:test": "npx hardhat test",
+    "setup": "npm install && npm run frontend:install"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^4.9.3",
+    "dotenv": "^16.4.7",
+    "hardhat": "^2.22.18"
+  }
+}
